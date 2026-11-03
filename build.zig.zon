@@ -1,0 +1,17 @@
+.{
+    .name = .icu4z,
+    .version = "0.0.1",
+    .dependencies = .{
+        .translate_c = .{
+            .url = "git+https://codeberg.org/ziglang/translate-c?ref=2.0.2#c11030012dc325d446474d17b78c242fd1d622ec",
+            .hash = "translate_c-2.0.2-Q_BUWvBNBwBgPKQJPblip6M7AHNK_IPNPmyv4rSIQMQc",
+        },
+        .icu = .{
+            .url = "https://github.com/unicode-org/icu/releases/download/release-78.3/icu4c-78.3-sources.tgz",
+            .hash = "N-V-__8AAHaxOAfENSr1IM3N9twMtZKvHY_XhDCBcchfQgoM",
+        },
+    },
+    .minimum_zig_version = "0.17.0",
+    .paths = .{""},
+    .fingerprint = 0x22537ba24f08fc02,
+}
