@@ -83,4 +83,3 @@ pub fn check(status: c.UErrorCode) Error!void {
 pub fn length(size: usize) error{InputTooLong}!i32 {
     return std.math.cast(i32, size) orelse error.InputTooLong;
 }
-
