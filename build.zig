@@ -15,6 +15,7 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
     });
     t.defineCMacro("U_STATIC_IMPLEMENTATION", "1");
+    t.defineCMacro("U_DISABLE_RENAMING", "1");
     t.linkLibrary(library);
 
     const module = b.addModule("icu4z", .{

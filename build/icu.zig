@@ -14,6 +14,7 @@ pub fn build(b: *std.Build, target: std.Build.ResolvedTarget, optimize: std.buil
         .pic = true,
     });
     module.addCMacro("U_STATIC_IMPLEMENTATION", "1");
+    module.addCMacro("U_DISABLE_RENAMING", "1");
     module.addIncludePath(source.path("source/common"));
     module.addIncludePath(source.path("source/i18n"));
 
