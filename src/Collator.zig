@@ -1,4 +1,6 @@
 //! A wrapper for ICU's UCollator type.
+//! https://unicode-org.github.io/icu-docs/apidoc/released/icu4c/ucol_8h.html
+//!
 //! Compares UTF-8 text using a locale's sorting rules.
 const Collator = @This();
 const std = @import("std");
@@ -14,7 +16,9 @@ pub fn init(locale: ?[:0]const u8) !Collator {
     const ref = c.ucol_open(if (locale) |value| value.ptr else null, &status);
     errdefer if (ref) |value| c.ucol_close(value);
     try errors.check(status);
-    return .{ .ref = ref orelse return error.UnexpectedResult };
+    return .{
+        .ref = ref orelse return error.UnexpectedResult,
+    };
 }
 
 /// Frees the collator.

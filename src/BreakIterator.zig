@@ -1,4 +1,6 @@
 //! A wrapper for ICU's UBreakIterator type.
+//! https://unicode-org.github.io/icu-docs/apidoc/released/icu4c/ubrk_8h.html
+//!
 //! Finds character, word, line, and sentence boundaries in UTF-8 text.
 //! Positions are byte offsets.
 const BreakIterator = @This();
