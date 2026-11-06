@@ -7,8 +7,8 @@
             .hash = "translate_c-2.0.2-Q_BUWvBNBwBgPKQJPblip6M7AHNK_IPNPmyv4rSIQMQc",
         },
         .icu = .{
-            .url = "https://github.com/unicode-org/icu/releases/download/release-78.3/icu4c-78.3-sources.tgz",
-            .hash = "N-V-__8AAHaxOAfENSr1IM3N9twMtZKvHY_XhDCBcchfQgoM",
+            .url = "https://github.com/unicode-org/icu/releases/download/release-79.1/icu4c-79.1-sources.tgz",
+            .hash = "N-V-__8AAPCTTge1qJR5CtrVWDLb54es0Y7i4F2Xi8vzBen-"
         },
     },
     .minimum_zig_version = "0.17.0",
